@@ -2,8 +2,8 @@
 title:               Datasets of discrete objects
 tagline:             'A place for your favourite datasets'
 description:         'A website developed to publish and consult datasets of discrete objects'
-url:                 http://anteromontonio.github.io/datasetsLj
-baseurl:             ''
+url:                 http://anteromontonio.github.io
+baseurl:             '/datasetsLj'
 # paginate:            5
 permalink:           pretty
 
