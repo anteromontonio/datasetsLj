@@ -46,7 +46,7 @@ title: Home
 Ideally, we would host some datasets nicely presented here, currently we have:
 
 {% for post in site.datasets %}
- * [{{ post.title }}]({{ post.url }})
+ * [{{ post.title }}]({{ post.url | relative_url  }})
 {% endfor %}
 
 
