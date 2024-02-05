@@ -31,4 +31,4 @@ collections:
     permalink: /:collection/:path/
 
 exclude:
-- phyton/
+- phyton/*
