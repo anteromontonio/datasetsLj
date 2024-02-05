@@ -29,3 +29,6 @@ collections:
    tables:
     output: true
     permalink: /:collection/:path/
+
+exclude:
+- phyton/*
