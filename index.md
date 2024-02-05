@@ -41,9 +41,9 @@ title: Home
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p> -->
 
-This is a website designed and maintained by some people doing Discrete Math in Ljubljana, Slovenia
+  This is a website designed and maintained by [Rhys Evans](https://rhysje00.github.io/), [Antonio Montero](https://anteromontonio.github.io/), [Primož Potočnik](https://users.fmf.uni-lj.si/potocnik/) and [Micael Toledo](http://www.imfm.si/www.imfm.si/admin/sodelavci/imfmmember.2023-10-03.0851716078/) from the [ Institute of Mathematics, Physics and Mechanics](http://www.imfm.si/)  and the [Faculty of Mathematics and Physics of the University of Ljubljana](https://www.fmf.uni-lj.si/en/), in Ljubljana, Slovenia.
 
-Ideally, we would host some datasets nicelly presented here, currently we have:
+Ideally, we would host some datasets nicely presented here, currently we have:
 
 {% for post in site.datasets %}
  * [{{ post.title }}]({{ post.url }})

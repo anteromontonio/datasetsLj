@@ -2,7 +2,7 @@
 title:               Datasets of discrete objects
 tagline:             'A place for your favourite datasets'
 description:         'A website developed to publish and consult datasets of discrete objects'
-url:                 http://localhost:4000
+url:                 http://anteromontonio.github.io/datasetsLj
 baseurl:             ''
 # paginate:            5
 permalink:           pretty
@@ -29,3 +29,6 @@ collections:
    tables:
     output: true
     permalink: /:collection/:path/
+
+exclude:
+- phyton/
