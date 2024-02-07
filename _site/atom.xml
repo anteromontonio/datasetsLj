@@ -4,7 +4,11 @@
  <title>Datasets of discrete objects</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
+<<<<<<< HEAD
  <updated>2024-02-05T12:31:24+01:00</updated>
+=======
+ <updated>2024-02-06T10:06:07+01:00</updated>
+>>>>>>> 3e00b3fc166a9362e6580434cf4a64769f3bd9d4
  <id>http://localhost:4000</id>
  <author>
    <name>Antonio Montero</name>
