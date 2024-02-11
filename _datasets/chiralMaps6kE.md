@@ -2,7 +2,7 @@
 layout: page
 title: Chiral maps up to 6000 edges
 ---
-This dataset contains the chiral maps up to 6000 edges, or equivalently those whose automorphism group is of order at mor 12 000. 
+This dataset contains the chiral maps up to 6000 edges, or equivalently those whose automorphism group is of order at most 12 000. 
 Each entry of the dataset is labelled by an identifier of the form CM\[E,i\] where E denotes the number of edges of the map and i indicates that the entry is the i-th map with such number of edges.
 
 ### Tables 
