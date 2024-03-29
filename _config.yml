@@ -23,12 +23,9 @@ google_analytics_id: #UA-XXXX-Y
 
 
 collections:
-   datasets:
-    output: true
-    permalink: /:collection/:path/
-   tables:
-    output: true
-    permalink: /:collection/:path/
+
 
 exclude:
-- phyton/*
+- phyton/
+
+incremental: true
