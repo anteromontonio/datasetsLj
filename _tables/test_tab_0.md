@@ -8,7 +8,8 @@ last_entry: <a href="./CM_80_11.html"> CM[80;11]</a>
 ---
 
 The following table contains the entries from {{ page.first_entry }} to {{ page.last_entry }} of the dataset of [{{ page.dataset_title }}]( /datasets/test ).
- <table id="myTable" class="display compact" style="width=100%">
+ You can use the buttons to toggle the view of the corresponding column. 
+<table id="myTable" class="display compact" style="width=100%">
   <thead>
     <tr >
       <th>ID</th>

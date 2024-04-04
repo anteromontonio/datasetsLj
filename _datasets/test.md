@@ -29,13 +29,15 @@ This dataset contains (at least) the following information for every entry:
 - **PlhSk**: Some other kind of skeleton
 
 ### Resources
+- You can download a csv file containing the data on this dataset [here]({{ site.url }}/csv/test.csv) 
+
 
 
 ### Tables 
 <ol>
 {% for post in site.tables %}
   {% if post.dataset == 'test' %}
- <li> A <a href= "{{ site.url }}{{ post.url | relative_url }}" > table </a> containing the entries from {{ post.first_entry }} to {{ post.last_entry }} </li>
+ <li> <a href= "{{ site.url }}{{ post.url | relative_url }}" > Table </a> containing the entries from {{ post.first_entry }} to {{ post.last_entry }} </li>
 {% endif %}{% endfor %} 
  </ol>
 

@@ -36,7 +36,7 @@ def build_tables_from_csv(
     for i in range(len(data)//max_rows):
         data_split_list.append(data.iloc[max_rows*i:max_rows*(i+1)])
     data_split_list.append(data.iloc[max_rows*(len(data)//max_rows):])
-
+    print(f'We are producing {len(data_split_list)+1} tables')
     for i in range(len(data_split_list)):
         frontmatter=f'---\nlayout: default\ndataset: {dataset_id}\ndataset_title: {dataset_title}\npermalink: /{dataset_id}/{dataset_id}_tab_{i} \nfirst_entry: {data_split_list[i].iat[0,0]}\nlast_entry: {data_split_list[i].iat[-1,0]}\n---\n\n'
         html=data_split_list[i].to_html(index=False, columns=toShowInTables,)
@@ -45,9 +45,16 @@ def build_tables_from_csv(
         html=html.replace('style="text-align: right;"','')
         with open(f'../_tables/{dataset_id}_tab_{i}.md', 'w') as md_file:
             md_file.write(frontmatter)
-            md_file.write(f"The following table contains the entries from {{{{ page.first_entry }}}} to {{{{ page.last_entry }}}} of the dataset of [{{{{ page.dataset_title }}}}]( /datasets/{dataset_id} ).\n ")
+            preample=f"The following table contains the entries from {{{{ page.first_entry }}}} to {{{{ page.last_entry }}}} of the dataset of [{{{{ page.dataset_title }}}}]( /datasets/{dataset_id} ).\n You can use the buttons to toggle the view of the corresponding column. \n"
+
+
+            md_file.write(preample)
+
+
             md_file.write(html)
+        print(f'Processing {dataset_id}_tab_{i}')
         add_links_to_tables(f'{dataset_id}_tab_{i}',data_split_list[i])
+        print(f'{dataset_id}_tab_{i} Processed')
 
 def build_dataset_page(
   dataset_id: str, #inner id for the dataset, eg. "chiralMaps"
@@ -57,12 +64,14 @@ def build_dataset_page(
   overwrite:bool = False, # to force overwriting
 ) -> None:
     if not os.path.exists(f'../_datasets/{dataset_id}.md') or overwrite:
+        print("Overwriting")
         with open(f'../_datasets/{dataset_id}.md', 'w') as dataset_md:             
             frontmatter=f"--- \n layout: page\n title: {dataset_title}\n permalink: /{dataset_id}/\n---\n\n"
             
-            tables=f"### Tables \n<ol>\n{{% for post in site.tables %}}\n  {{% if post.dataset == '{dataset_id}' %}}\n <li> A <a href= \"{{{{ site.url }}}}{{{{ post.url | relative_url }}}}\" > table </a> containing the entries from {{{{ post.first_entry }}}} to {{{{ post.last_entry }}}} </li>\n{{% endif %}}{{% endfor %}} \n </ol>\n\n"
+            tables=f"### Tables \n<ol>\n{{% for post in site.tables %}}\n  {{% if post.dataset == '{dataset_id}' %}}\n <li> <a href= \"{{{{ site.url }}}}{{{{ post.url | relative_url }}}}\" > Table </a> containing the entries from {{{{ post.first_entry }}}} to {{{{ post.last_entry }}}} </li>\n{{% endif %}}{{% endfor %}} \n </ol>\n\n"
 
-            resources="### Resources" + res + "\n\n"
+            csvPage=f"- You can download a csv file containing the data on this dataset [here]({{{{ site.url }}}}/csv/{dataset_id}.csv). \n"
+            resources="### Resources\n" + csvPage+res + "\n\n"
 
             dictContents="This dataset contains (at least) the following information for every entry:\n"
 
