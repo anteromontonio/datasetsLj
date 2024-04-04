@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Chiral maps up to 6000 edges &middot; Datasets of discrete objects
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/chiralMaps6kE/">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+
+
+  <!-- CDN jquery -->
+  <link href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-1.13.8/datatables.min.css" rel="stylesheet">
+ 
+  <script src="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-1.13.8/datatables.min.js"></script>
+
+  <link href="https://cdn.datatables.net/v/dt/dt-1.13.8/b-2.4.2/b-colvis-2.4.2/datatables.min.css" rel="stylesheet">
+ 
+  <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/b-2.4.2/b-colvis-2.4.2/datatables.min.js"></script>
+
+  <!--  -->
+  
+  
+  <script>   
+    $(document).ready( function () {
+        $('#myTable').DataTable({
+          scrollX: true,
+          // scrollY: 1000,
+          // paging: false,
+          pageLength: 100,
+          lengthMenu: [[ 50, 100, 250, 500, 1000, -1 ], [50, 100, 250, 500, 1000,"All"]],
+          dom: 'Bfrtip',
+          buttons: [
+            'columnsToggle'
+        ]
+        });
+    } );
+ </script>
+
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A website developed to publish and consult datasets of discrete objects</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="http://localhost:4000/">Home</a>
+
+    
+
+    
+    
+      
+        
+          <a class="sidebar-nav-item active" href="http://localhost:4000/chiralMaps6kE/">Chiral maps up to 6000 edges</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="http://localhost:4000/test/">Testing dataset</a>
+        
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.1.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.1.0</span> -->
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2024. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Datasets of discrete objects</a>
+            <small>A place for your favourite datasets</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="page">
+  <h1 class="page-title">Chiral maps up to 6000 edges</h1>
+  <p>This dataset contains (at least) the following information for every entry:</p>
+<ul>
+  <li><strong>ID</strong>: ID</li>
+  <li><strong>genus</strong>: Genus of the underlying surface</li>
+  <li><strong>p</strong>: Length of the face</li>
+  <li><strong>q</strong>: Valency</li>
+  <li><strong>r</strong>: Length of the Petrie polygon</li>
+  <li><strong>solv</strong>: Is the automorphism group solvable?</li>
+  <li><strong>V</strong>: Number of vertices</li>
+  <li><strong>E</strong>: Number of edges</li>
+  <li><strong>F</strong>: Number of faces</li>
+  <li><strong>vMult</strong>: Vertex multiplicity</li>
+  <li><strong>fMult</strong>: Face multiplicity</li>
+  <li><strong>self</strong>: The map is self-</li>
+  <li><strong>Du</strong>: Dual map</li>
+  <li><strong>Mir</strong>: Mirror (enantihomorphic) map</li>
+  <li><strong>DuMir</strong>: Dual of the mirror image</li>
+  <li><strong>Zq*:Exp</strong>: Z_q-Exponent?</li>
+  <li><strong>Hj</strong>: No idea</li>
+  <li><strong>plt</strong>: No idea</li>
+  <li><strong>plh</strong>: No idea</li>
+  <li><strong>Sk</strong>: Skeleton</li>
+  <li><strong>PlhSk</strong>: Some other kind of skeleton</li>
+</ul>
+
+<h3 id="resources">Resources</h3>
+<ul>
+  <li>You can download a csv file containing the data on this dataset <a href="http://localhost:4000/csv/chiralMaps6kE.csv">here</a></li>
+</ul>
+
+<h3 id="tables">Tables</h3>
+<ol>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_0"> Table </a> containing the entries from <a href="./CM_10_1.html"> CM[10;1]</a> to <a href="./CM_768_748.html"> CM[768;748]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_1"> Table </a> containing the entries from <a href="./CM_768_749.html"> CM[768;749]</a> to <a href="./CM_1140_6.html"> CM[1140;6]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_10"> Table </a> containing the entries from <a href="./CM_2624_41.html"> CM[2624;41]</a> to <a href="./CM_2808_318.html"> CM[2808;318]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_11"> Table </a> containing the entries from <a href="./CM_2808_319.html"> CM[2808;319]</a> to <a href="./CM_2964_78.html"> CM[2964;78]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_12"> Table </a> containing the entries from <a href="./CM_2964_79.html"> CM[2964;79]</a> to <a href="./CM_3072_4464.html"> CM[3072;4464]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_13"> Table </a> containing the entries from <a href="./CM_3072_4465.html"> CM[3072;4465]</a> to <a href="./CM_3072_14464.html"> CM[3072;14464]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_14"> Table </a> containing the entries from <a href="./CM_3072_14465.html"> CM[3072;14465]</a> to <a href="./CM_3200_474.html"> CM[3200;474]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_15"> Table </a> containing the entries from <a href="./CM_3200_475.html"> CM[3200;475]</a> to <a href="./CM_3354_20.html"> CM[3354;20]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_16"> Table </a> containing the entries from <a href="./CM_3354_21.html"> CM[3354;21]</a> to <a href="./CM_3456_4956.html"> CM[3456;4956]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_17"> Table </a> containing the entries from <a href="./CM_3456_4957.html"> CM[3456;4957]</a> to <a href="./CM_3584_870.html"> CM[3584;870]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_18"> Table </a> containing the entries from <a href="./CM_3584_871.html"> CM[3584;871]</a> to <a href="./CM_3744_1552.html"> CM[3744;1552]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_19"> Table </a> containing the entries from <a href="./CM_3744_1553.html"> CM[3744;1553]</a> to <a href="./CM_3840_6494.html"> CM[3840;6494]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_2"> Table </a> containing the entries from <a href="./CM_1140_7.html"> CM[1140;7]</a> to <a href="./CM_1425_14.html"> CM[1425;14]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_20"> Table </a> containing the entries from <a href="./CM_3840_6495.html"> CM[3840;6495]</a> to <a href="./CM_3927_6.html"> CM[3927;6]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_21"> Table </a> containing the entries from <a href="./CM_3927_7.html"> CM[3927;7]</a> to <a href="./CM_4056_136.html"> CM[4056;136]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_22"> Table </a> containing the entries from <a href="./CM_4056_137.html"> CM[4056;137]</a> to <a href="./CM_4096_7968.html"> CM[4096;7968]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_23"> Table </a> containing the entries from <a href="./CM_4096_7969.html"> CM[4096;7969]</a> to <a href="./CM_4096_17968.html"> CM[4096;17968]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_24"> Table </a> containing the entries from <a href="./CM_4096_17969.html"> CM[4096;17969]</a> to <a href="./CM_4096_27968.html"> CM[4096;27968]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_25"> Table </a> containing the entries from <a href="./CM_4096_27969.html"> CM[4096;27969]</a> to <a href="./CM_4160_1112.html"> CM[4160;1112]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_26"> Table </a> containing the entries from <a href="./CM_4160_1113.html"> CM[4160;1113]</a> to <a href="./CM_4320_4600.html"> CM[4320;4600]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_27"> Table </a> containing the entries from <a href="./CM_4320_4601.html"> CM[4320;4601]</a> to <a href="./CM_4400_618.html"> CM[4400;618]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_28"> Table </a> containing the entries from <a href="./CM_4400_619.html"> CM[4400;619]</a> to <a href="./CM_4576_128.html"> CM[4576;128]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_29"> Table </a> containing the entries from <a href="./CM_4576_129.html"> CM[4576;129]</a> to <a href="./CM_4608_9490.html"> CM[4608;9490]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_3"> Table </a> containing the entries from <a href="./CM_1425_15.html"> CM[1425;15]</a> to <a href="./CM_1600_766.html"> CM[1600;766]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_30"> Table </a> containing the entries from <a href="./CM_4608_9491.html"> CM[4608;9491]</a> to <a href="./CM_4608_19490.html"> CM[4608;19490]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_31"> Table </a> containing the entries from <a href="./CM_4608_19491.html"> CM[4608;19491]</a> to <a href="./CM_4760_132.html"> CM[4760;132]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_32"> Table </a> containing the entries from <a href="./CM_4760_133.html"> CM[4760;133]</a> to <a href="./CM_4869_2.html"> CM[4869;2]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_33"> Table </a> containing the entries from <a href="./CM_4869_3.html"> CM[4869;3]</a> to <a href="./CM_4992_3912.html"> CM[4992;3912]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_34"> Table </a> containing the entries from <a href="./CM_4992_3913.html"> CM[4992;3913]</a> to <a href="./CM_5120_1130.html"> CM[5120;1130]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_35"> Table </a> containing the entries from <a href="./CM_5120_1131.html"> CM[5120;1131]</a> to <a href="./CM_5120_11130.html"> CM[5120;11130]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_36"> Table </a> containing the entries from <a href="./CM_5120_11131.html"> CM[5120;11131]</a> to <a href="./CM_5120_21130.html"> CM[5120;21130]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_37"> Table </a> containing the entries from <a href="./CM_5120_21131.html"> CM[5120;21131]</a> to <a href="./CM_5184_6966.html"> CM[5184;6966]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_38"> Table </a> containing the entries from <a href="./CM_5184_6967.html"> CM[5184;6967]</a> to <a href="./CM_5292_1306.html"> CM[5292;1306]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_39"> Table </a> containing the entries from <a href="./CM_5292_1307.html"> CM[5292;1307]</a> to <a href="./CM_5376_6932.html"> CM[5376;6932]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_4"> Table </a> containing the entries from <a href="./CM_1600_767.html"> CM[1600;767]</a> to <a href="./CM_1872_40.html"> CM[1872;40]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_40"> Table </a> containing the entries from <a href="./CM_5376_6933.html"> CM[5376;6933]</a> to <a href="./CM_5472_122.html"> CM[5472;122]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_41"> Table </a> containing the entries from <a href="./CM_5472_123.html"> CM[5472;123]</a> to <a href="./CM_5616_1980.html"> CM[5616;1980]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_42"> Table </a> containing the entries from <a href="./CM_5616_1981.html"> CM[5616;1981]</a> to <a href="./CM_5760_2674.html"> CM[5760;2674]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_43"> Table </a> containing the entries from <a href="./CM_5760_2675.html"> CM[5760;2675]</a> to <a href="./CM_5814_2.html"> CM[5814;2]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_44"> Table </a> containing the entries from <a href="./CM_5814_3.html"> CM[5814;3]</a> to <a href="./CM_5832_9086.html"> CM[5832;9086]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_45"> Table </a> containing the entries from <a href="./CM_5832_9087.html"> CM[5832;9087]</a> to <a href="./CM_6000_912.html"> CM[6000;912]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_46"> Table </a> containing the entries from <a href="./CM_6000_913.html"> CM[6000;913]</a> to <a href="./CM_6000_3484.html"> CM[6000;3484]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_5"> Table </a> containing the entries from <a href="./CM_1872_41.html"> CM[1872;41]</a> to <a href="./CM_2048_280.html"> CM[2048;280]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_6"> Table </a> containing the entries from <a href="./CM_2048_281.html"> CM[2048;281]</a> to <a href="./CM_2160_1022.html"> CM[2160;1022]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_7"> Table </a> containing the entries from <a href="./CM_2160_1023.html"> CM[2160;1023]</a> to <a href="./CM_2304_3758.html"> CM[2304;3758]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_8"> Table </a> containing the entries from <a href="./CM_2304_3759.html"> CM[2304;3759]</a> to <a href="./CM_2500_278.html"> CM[2500;278]</a> </li>
+
+  
+ <li> <a href="http://localhost:4000/chiralMaps6kE/chiralMaps6kE_tab_9"> Table </a> containing the entries from <a href="./CM_2500_279.html"> CM[2500;279]</a> to <a href="./CM_2624_40.html"> CM[2624;40]</a> </li>
+
+   
+ </ol>
+
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>

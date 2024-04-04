@@ -23,12 +23,16 @@ google_analytics_id: #UA-XXXX-Y
 
 
 collections:
+  tables:
+    output: true
+    permalink: /:collection/:path/
+  datasets:
+    output: true
+    permalink: /:collection/:path
+  # chiralMaps6kE:
+  #   output: true
   test:
     output: true
-    permalink: /:collection/:path/
-  chiralMaps6kE:
-    output: true
-    permalink: /:collection/:path/
 
 exclude:
 - phyton/*
