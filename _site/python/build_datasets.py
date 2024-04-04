@@ -31,20 +31,23 @@ def build_tables_from_csv(
   dataset_title: str, #actual title (on the website) eg "Chiral maps up to 6000 edges"
   toShowInTables: List,
   max_rows: int = 10000, 
+  overwrite:bool = False
  ) -> None :
     data_split_list=[]
     for i in range(len(data)//max_rows):
         data_split_list.append(data.iloc[max_rows*i:max_rows*(i+1)])
     data_split_list.append(data.iloc[max_rows*(len(data)//max_rows):])
-    print(f'We are producing {len(data_split_list)+1} tables')
+    print(f'We are producing {len(data_split_list)} tables')
     for i in range(len(data_split_list)):
         frontmatter=f'---\nlayout: default\ndataset: {dataset_id}\ndataset_title: {dataset_title}\npermalink: /{dataset_id}/{dataset_id}_tab_{i} \nfirst_entry: {data_split_list[i].iat[0,0]}\nlast_entry: {data_split_list[i].iat[-1,0]}\n---\n\n'
         html=data_split_list[i].to_html(index=False, columns=toShowInTables,)
         html=html.replace('border="1"', 'id="myTable"')
         html=html.replace('class="dataframe"','class="display compact" style="width=100%"')
         html=html.replace('style="text-align: right;"','')
+        # if not os.path.exists(f'../_tables/{dataset_id}_tab_{i}.md') or overwrite:
         with open(f'../_tables/{dataset_id}_tab_{i}.md', 'w') as md_file:
             md_file.write(frontmatter)
+                
             preample=f"The following table contains the entries from {{{{ page.first_entry }}}} to {{{{ page.last_entry }}}} of the dataset of [{{{{ page.dataset_title }}}}]( /datasets/{dataset_id} ).\n You can use the buttons to toggle the view of the corresponding column. \n"
 
 
@@ -124,6 +127,7 @@ def preprocess_DataSet(
             dataset[col+"_url"]=dataset[col+"_url"].str.replace(";","_")
             dataset[col+"_url"]=dataset[col+"_url"].str.replace("]","")
 
+#slow, only alows links withing the same dataset
 def add_links_to_tables(
     table_file:str, #path to the table file
     dataset, #pandas dataset with url-s columns

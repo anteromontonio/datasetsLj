@@ -23,13 +23,13 @@ google_analytics_id: #UA-XXXX-Y
 
 
 collections:
-  - tables:
+  tables:
     output: true
-      # permalink: /:collection/:path/
-  - datasets:
+      permalink: /:collection/:path/
+  datasets:
     output: true
-      # permalink: /:collection/:path
-  - chiralMaps6kE:
+      permalink: /:collection/:path
+  chiralMaps6kE:
     output: true
 
 exclude:
