@@ -29,8 +29,8 @@ collections:
   datasets:
     output: true
     permalink: /:collection/:path
-  # chiralMaps6kE:
-  #   output: true
+  chiralMaps6kE:
+    output: true
   test:
     output: true
 
